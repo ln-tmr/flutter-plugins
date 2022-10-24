@@ -289,7 +289,7 @@ public class ResolutionFeature extends CameraFeature<ResolutionPreset> {
             new Size(recordingProfileLegacy.videoFrameWidth, recordingProfileLegacy.videoFrameHeight);
       }
     }
-    
-    previewSize = actualMaxResolution;
+
+    previewSize = captureSize;
   }
 }
