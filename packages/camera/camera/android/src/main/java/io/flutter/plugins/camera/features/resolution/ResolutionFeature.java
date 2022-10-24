@@ -269,7 +269,6 @@ public class ResolutionFeature extends CameraFeature<ResolutionPreset> {
 
         Log.d( "RESOLUTION PICKED", actualMaxResolution.toString() );
         captureSize = actualMaxResolution;
-        previewSize = actualMaxResolution;
       } catch( CameraAccessException e ) {}
     }
 
@@ -290,7 +289,7 @@ public class ResolutionFeature extends CameraFeature<ResolutionPreset> {
             new Size(recordingProfileLegacy.videoFrameWidth, recordingProfileLegacy.videoFrameHeight);
       }
     }
-
-    previewSize = computeBestPreviewSize(cameraId, resolutionPreset);
+    
+    previewSize = actualMaxResolution;
   }
 }
