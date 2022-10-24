@@ -269,6 +269,7 @@ public class ResolutionFeature extends CameraFeature<ResolutionPreset> {
 
         Log.d( "RESOLUTION PICKED", actualMaxResolution.toString() );
         captureSize = actualMaxResolution;
+        previewSize = actualMaxResolution;
       } catch( CameraAccessException e ) {}
     }
 
